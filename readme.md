@@ -1,5 +1,7 @@
 # Liftit npm ES5 Skeleton
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/fbb04395027843d9b9e509faad131530)](https://www.codacy.com/app/Liftit/redux-analytics?utm_source=github.com&utm_medium=referral&utm_content=Liftitapp/redux-analytics&utm_campaign=badger)
+
 ## Features
 
 - Node optimized ES5 transpilation with [Babel](https://github.com/babel/babel)
