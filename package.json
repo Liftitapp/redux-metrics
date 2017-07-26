@@ -1,9 +1,10 @@
 {
   "name": "redux-metrics",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Transform your actions on metrics",
   "main": "dist/redux-metrics",
   "scripts": {
+    "clean": "rimraf dist",
     "benchmark": "babel-node benchmark",
     "benchmark:watch": "nodemon $2 --exec babel-node benchmark",
     "lint": "eslint src",

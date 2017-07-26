@@ -45,7 +45,7 @@ export const generateConfig = config => {
     identifySchemaID: null,
     trackingLib: defaultTrackingLib
   }
-  return Object.assign(deafaultConfig, config)
+  return Object.assign({}, deafaultConfig, config)
 }
 
 export const onBlackList = (blacklistActions, type) =>
