@@ -1,5 +1,5 @@
 {
-  "name": "redux-analytics",
+  "name": "redux-metrics",
   "version": "0.0.1",
   "description": "Transform your actions on metrics",
   "main": "./dist/index.js",
@@ -22,7 +22,7 @@
   },
   "keywords": [
     "liftit",
-    "redu-analytics",
+    "redux-metrics",
     "redux",
     "segment",
     "mixpanel",
