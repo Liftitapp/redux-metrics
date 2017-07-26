@@ -8,6 +8,7 @@ Transform your actions to metrics. use Segment, Mixpanel or custom lib to report
 
 ## TODO 
 - cool readme
+- minify dist
 
 ## License
 
