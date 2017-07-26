@@ -1,8 +1,8 @@
 {
   "name": "redux-metrics",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Transform your actions on metrics",
-  "main": "./dist/index.js",
+  "main": "./src/index.js",
   "scripts": {
     "benchmark": "babel-node benchmark",
     "benchmark:watch": "nodemon $2 --exec babel-node benchmark",
