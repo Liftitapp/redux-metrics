@@ -1,5 +1,7 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/fbb04395027843d9b9e509faad131530)](https://www.codacy.com/app/Liftit/redux-analytics?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Liftitapp/redux-analytics&amp;utm_campaign=Badge_Grade)
 
+[![Build Status](https://semaphoreci.com/api/v1/liftit/redux-analytics/branches/master/shields_badge.svg)](https://semaphoreci.com/liftit/redux-analytics)
+
 # redux-analytics
 
 Transform your actions to metrics. use Segment, Mixpanel or custom lib to report your events power by Liftit
