@@ -6,7 +6,15 @@ import {
   generateConfig
 } from './helpers'
 
-const createSegmentAnalytics = config => {
+/**
+ * Transform your actions with following options
+ *
+ * @namespace
+ * @param {object} config - config for metrics
+ *
+ * @returns {function} logger middleware
+ */
+const createMetrics = config => {
   return store => next => action => {
     next(action)
     const {
@@ -35,4 +43,4 @@ const createSegmentAnalytics = config => {
   }
 }
 
-export default createSegmentAnalytics
+export default createMetrics

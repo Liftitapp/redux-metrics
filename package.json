@@ -1,14 +1,14 @@
 {
   "name": "redux-metrics",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Transform your actions on metrics",
-  "main": "./src/index.js",
+  "main": "dist/redux-metrics",
   "scripts": {
     "benchmark": "babel-node benchmark",
     "benchmark:watch": "nodemon $2 --exec babel-node benchmark",
     "lint": "eslint src",
     "lint:fix": "eslint --fix src",
-    "build": "babel -s true src -d dist",
+    "build": "rollup -c",
     "test": "mocha -c -S -R spec 'tests' --compilers js:babel-register --check-leaks",
     "test:watch": "mocha -w -c -S -R spec 'tests' --compilers js:babel-register --check-leaks",
     "test:reporter-list": "mocha -c -S -R list 'tests' --compilers js:babel-register --check-leaks",
@@ -20,6 +20,7 @@
     "postmerge": "npm install",
     "postrewrite": "npm install"
   },
+  "files": ["dist", "src"],
   "keywords": [
     "liftit",
     "redux-metrics",
@@ -29,10 +30,25 @@
     "intercom",
     "react-native"
   ],
+  "bugs": {
+    "url": "https://github.com/theaqua/redux-metrics/issues"
+  },
+  "homepage": "https://github.com/theaqua/redux-metrics#readme",
   "author": "Angel Celis Botto <angel@lftit.co>",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Liftitapp/redux-metrics.git"
+  },
+  "nyc": {
+    "exclude": [
+      "node_modules",
+      "spec",
+      "example",
+      "lib",
+      "dist",
+      "coverage",
+      "rollup.config.js"
+    ]
   },
   "dependencies": {
     "lodash": "^4.17.4"
@@ -59,7 +75,13 @@
     "mochawesome": "^2.3.0",
     "nodemon": "^1.11.0",
     "npm-check-updates": "^2.12.1",
-    "nsp": "^2.6.3"
+    "nsp": "^2.6.3",
+    "rimraf": "^2.6.1",
+    "rollup": "^0.45.2",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-uglify": "^2.0.1"
   },
   "license": "MIT"
 }

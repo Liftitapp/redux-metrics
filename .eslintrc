@@ -2,10 +2,8 @@
   "parser": "babel-eslint",
   "extends": ["standard"],
   "env": {
-    "es6": true,
-    "node": true,
-    "browser": false,
-    "jasmine": true
+    "browser": true,
+    "mocha": true
   },
   "plugins": ["standard", "promise"],
   "parserOptions": {

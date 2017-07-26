@@ -37,14 +37,16 @@ export const defaultTrackingLib = () => ({
   }
 })
 
-export const generateConfig = config => ({
-  blacklistActions: [],
-  blacklistKeys: [],
-  identifyAction: null,
-  identifySchemaID: null,
-  trackingLib: defaultTrackingLib,
-  ...config
-})
+export const generateConfig = config => {
+  const deafaultConfig = {
+    blacklistActions: [],
+    blacklistKeys: [],
+    identifyAction: null,
+    identifySchemaID: null,
+    trackingLib: defaultTrackingLib
+  }
+  return Object.assign(deafaultConfig, config)
+}
 
 export const onBlackList = (blacklistActions, type) =>
   !_.includes(blacklistActions, type)
