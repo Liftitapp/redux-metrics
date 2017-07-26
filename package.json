@@ -1,6 +1,6 @@
 {
   "name": "redux-metrics",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Transform your actions on metrics",
   "main": "./dist/index.js",
   "scripts": {
@@ -32,7 +32,7 @@
   "author": "Angel Celis Botto <angel@lftit.co>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Liftitapp/redux-analytics.git"
+    "url": "git+https://github.com/Liftitapp/redux-metrics.git"
   },
   "dependencies": {
     "lodash": "^4.17.4"
