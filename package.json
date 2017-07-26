@@ -1,6 +1,6 @@
 {
   "name": "redux-metrics",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Transform your actions on metrics",
   "main": "dist/redux-metrics",
   "scripts": {
