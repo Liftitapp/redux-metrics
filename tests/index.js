@@ -6,7 +6,6 @@ import {
   defaultTrackingLib
 } from '../src/helpers'
 import { expect, assert } from 'chai'
-import _ from 'lodash'
 
 describe('omitDeep helper method Test', () => {
   let payload = omitDeep(
