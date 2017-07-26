@@ -1,0 +1,13 @@
+*~
+*.log
+*.sh
+*.pid
+*.org.md
+.tscache
+/template.md
+/local
+/templates
+/typings
+node_modules
+.nyc_output
+npm-debug.log

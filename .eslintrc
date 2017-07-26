@@ -1,0 +1,24 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["standard"],
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": false,
+    "jasmine": true
+  },
+  "plugins": ["standard", "promise"],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "commonjs": true,
+      "modules": true
+    }
+  },
+  "rules": {
+    "key-spacing": 0,
+    "jsx-quotes": [2, "prefer-single"],
+    "object-curly-spacing": [2, "always"],
+    "camelcase": 0
+  }
+}
