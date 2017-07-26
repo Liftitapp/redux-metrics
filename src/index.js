@@ -12,7 +12,7 @@ import {
  * @namespace
  * @param {object} config - config for metrics
  *
- * @returns {function} logger middleware
+ * @returns {function} metrics middleware
  */
 const createMetrics = config => {
   return store => next => action => {
