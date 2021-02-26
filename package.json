@@ -19,7 +19,10 @@
     "postmerge": "npm install",
     "postrewrite": "npm install"
   },
-  "files": ["dist", "src"],
+  "files": [
+    "dist",
+    "src"
+  ],
   "keywords": [
     "liftit",
     "redux-metrics",
